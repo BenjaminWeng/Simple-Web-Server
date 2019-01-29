@@ -212,7 +212,7 @@ int main() {
 
   // Wait for server to start so that the client can connect
   this_thread::sleep_for(chrono::seconds(1));
-
+/*
   // Client examples
   HttpClient client("localhost:8080");
 
@@ -235,7 +235,7 @@ int main() {
     if(!ec)
       cout << response->content.rdbuf() << endl;
   });
-  client.io_service->run();
+  client.io_service->run();*/
 
   server_thread.join();
 }
